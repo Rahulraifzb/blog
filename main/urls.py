@@ -22,7 +22,7 @@ urlpatterns = [
     path('post/new/', CreatePost.as_view(),
          name="create_post"),
 
-    path('post/<str:pk>/update', UpdatePost.as_view(),
+    path('post/<str:pk>/update/', UpdatePost.as_view(),
          name="update_post"),
 
     path('post/<str:pk>/delete/', DeletePost.as_view(),

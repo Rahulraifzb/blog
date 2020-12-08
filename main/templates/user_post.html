@@ -6,7 +6,7 @@
 <div class="row">
   <div class="col-md-12 rounded">
     <div class="card flex-md-row mb-4 box-shadow h-md-250">
-      <img class="rounded-circle article-img d-inline ml-3 mt-2" src="{{post.author.profile.image.url}}" alt="">
+      <img class="rounded-circle article-img d-inline ml-3 mt-2" src="{{post.author.profile.image.url}}" width="75" height="75" alt="">
       <div class="card-body d-flex flex-column align-items-start">
         <a href="{% url 'user_post' post.author.username %}"class="d-inline-block mb-2 text-primary text-decoration-none">{{ post.author|title }}</strong>
         <h3 class="mb-0">
@@ -14,7 +14,7 @@
         </h3>
         <div class="mb-1 text-muted">{{ post.date_posted|date:"d F, y" }}</div>
         <p class="card-text mb-auto">{{ post.content|truncatewords:15 }}</p>
-        <a href="#" id="read">Continue Reading</a>
+        <a href="#" id="read"class="btn btn-sm btn-outline-info">Continue Reading</a>
       </div>
     </div>
   </div>
